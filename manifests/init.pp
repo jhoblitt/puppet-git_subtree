@@ -1,6 +1,6 @@
-class git-subtree {
+class git_subtree {
   $subtree_source = 'https://raw.github.com/git/git/master/contrib/subtree/git-subtree.sh'
-  $subtree_path   = "/usr/libexec/git-core/$title"
+  $subtree_path   = "/usr/libexec/git-core/git-subtree"
 
   wget::fetch { 'git-subtree':
     source      => $subtree_source,
