@@ -1,0 +1,11 @@
+name    'jhoblitt-git_subtree'
+version '1.0.0'
+
+author 'Joshua Hoblitt <jhoblitt@cpan.org>'
+license 'Apache'
+project_page 'https://github.com/jhoblitt/puppet-git_subtree'
+source 'https://github.com/jhoblitt/puppet-git_subtree.git'
+summary 'Install the git-subtree script for versions of git < 1.7.11'
+description 'Install the git-subtree script for versions of git < 1.7.11'
+dependency 'puppetlabs/stdlib', '>= 1.0.0'
+dependency 'maestrodev/wget', '>= 0.0.1'
