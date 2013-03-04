@@ -16,6 +16,14 @@ class git_subtree {
     'https://raw.github.com/git/git/master/contrib/subtree/git-subtree.sh'
   $subtree_path   = '/usr/libexec/git-core/git-subtree'
 
+  case $::osfamily {
+    redhat: {
+    }
+    default: {
+      fail("Module ${module_name} is not supported on ${::operatingsystem}")
+    }
+  }
+
   wget::fetch { 'git-subtree':
     source      => $subtree_source,
     destination => $subtree_path,
