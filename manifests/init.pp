@@ -23,6 +23,8 @@ class git_subtree {
   }
 
   file { $subtree_path:
+    ensure  => present,
+    replace => false,
     owner   => 'root',
     group   => 'root',
     mode    => '0755',
