@@ -1,6 +1,8 @@
 Puppet git_subtree Module
 =========================
 
+[![Build Status](https://travis-ci.org/jhoblitt/puppet-git_subtree.png)](https://travis-ci.org/jhoblitt/puppet-git_subtree)
+
 Description
 -----------
 
